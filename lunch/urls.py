@@ -21,5 +21,7 @@ from stores.views import home
 urlpatterns = [
     #url(r'^$', home), # Casper modified
     url(r'^$', home, name='home'),
+
+    # 這一行把 admin/ 下面的 URL 對應到 Django admin。
     url(r'^admin/', admin.site.urls),
 ]
